@@ -13,6 +13,7 @@
 		58A26B22224A0D73005B7875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A26B20224A0D73005B7875 /* Main.storyboard */; };
 		58A26B24224A0D75005B7875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A26B23224A0D75005B7875 /* Assets.xcassets */; };
 		58A26B27224A0D75005B7875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A26B25224A0D75005B7875 /* LaunchScreen.storyboard */; };
+		58A26B2F224A1375005B7875 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A26B2E224A1375005B7875 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		58A26B23224A0D75005B7875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58A26B26224A0D75005B7875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58A26B28224A0D75005B7875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58A26B2E224A1375005B7875 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				58A26B1A224A0D73005B7875 /* AppDelegate.swift */,
+				58A26B2E224A1375005B7875 /* Utils.swift */,
 				58A26B1C224A0D73005B7875 /* art.scnassets */,
 				58A26B1E224A0D73005B7875 /* ViewController.swift */,
 				58A26B20224A0D73005B7875 /* Main.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				58A26B1F224A0D73005B7875 /* ViewController.swift in Sources */,
 				58A26B1B224A0D73005B7875 /* AppDelegate.swift in Sources */,
+				58A26B2F224A1375005B7875 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +228,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -278,6 +283,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
