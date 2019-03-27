@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		58A26B1B224A0D73005B7875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A26B1A224A0D73005B7875 /* AppDelegate.swift */; };
 		58A26B1D224A0D73005B7875 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A26B1C224A0D73005B7875 /* art.scnassets */; };
-		58A26B1F224A0D73005B7875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A26B1E224A0D73005B7875 /* ViewController.swift */; };
+		58A26B1F224A0D73005B7875 /* AugmentedRealityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A26B1E224A0D73005B7875 /* AugmentedRealityViewController.swift */; };
 		58A26B22224A0D73005B7875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A26B20224A0D73005B7875 /* Main.storyboard */; };
 		58A26B24224A0D75005B7875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A26B23224A0D75005B7875 /* Assets.xcassets */; };
 		58A26B27224A0D75005B7875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A26B25224A0D75005B7875 /* LaunchScreen.storyboard */; };
 		58A26B2F224A1375005B7875 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A26B2E224A1375005B7875 /* Utils.swift */; };
+		58A26B31224B0B58005B7875 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A26B30224B0B58005B7875 /* MainTableViewController.swift */; };
+		58A26B33224B0DA2005B7875 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A26B32224B0DA2005B7875 /* ModelManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58A26B17224A0D73005B7875 /* Lab - Plane detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab - Plane detection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58A26B1A224A0D73005B7875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58A26B1C224A0D73005B7875 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		58A26B1E224A0D73005B7875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58A26B1E224A0D73005B7875 /* AugmentedRealityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedRealityViewController.swift; sourceTree = "<group>"; };
 		58A26B21224A0D73005B7875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58A26B23224A0D75005B7875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58A26B26224A0D75005B7875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58A26B28224A0D75005B7875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58A26B2E224A1375005B7875 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		58A26B30224B0B58005B7875 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		58A26B32224B0DA2005B7875 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,10 @@
 			children = (
 				58A26B1A224A0D73005B7875 /* AppDelegate.swift */,
 				58A26B2E224A1375005B7875 /* Utils.swift */,
+				58A26B32224B0DA2005B7875 /* ModelManager.swift */,
 				58A26B1C224A0D73005B7875 /* art.scnassets */,
-				58A26B1E224A0D73005B7875 /* ViewController.swift */,
+				58A26B30224B0B58005B7875 /* MainTableViewController.swift */,
+				58A26B1E224A0D73005B7875 /* AugmentedRealityViewController.swift */,
 				58A26B20224A0D73005B7875 /* Main.storyboard */,
 				58A26B23224A0D75005B7875 /* Assets.xcassets */,
 				58A26B25224A0D75005B7875 /* LaunchScreen.storyboard */,
@@ -142,7 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58A26B1F224A0D73005B7875 /* ViewController.swift in Sources */,
+				58A26B31224B0B58005B7875 /* MainTableViewController.swift in Sources */,
+				58A26B1F224A0D73005B7875 /* AugmentedRealityViewController.swift in Sources */,
+				58A26B33224B0DA2005B7875 /* ModelManager.swift in Sources */,
 				58A26B1B224A0D73005B7875 /* AppDelegate.swift in Sources */,
 				58A26B2F224A1375005B7875 /* Utils.swift in Sources */,
 			);
