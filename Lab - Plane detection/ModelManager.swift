@@ -181,6 +181,21 @@ extension ModelManager: AddModelProtocol {
         
     }
     
+    func addOmniLight(to node: SCNNode) {
+        
+        let lightNode = SCNNode()
+        let light = SCNLight()
+        light.type = .omni
+        light.intensity = 5000
+        light.color = UIColor.yellow
+        
+        lightNode.light = light
+        lightNode.position.y = 1
+        
+        node.addChildNode(lightNode)
+        
+    }
+    
 }
 
 extension ModelManager: UpdateModelProtocol {
@@ -235,19 +250,13 @@ extension ModelManager: UpdateModelProtocol {
     }
     
     func scale(_ node: SCNNode, by index: Float) {
-        
         node.scale.x *= index
         node.scale.y *= index
         node.scale.z *= index
-        
     }
     
     func move(_ node: SCNNode, to position: SCNVector3) {
         node.position = position
-//        node.position.x += vector.x
-//        node.position.y += vector.y
-//        node.position.x += vector.z
-
     }
     
 }

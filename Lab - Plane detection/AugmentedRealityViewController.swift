@@ -36,6 +36,9 @@ class AugmentedRealityViewController: UIViewController {
         
         // Set the scene to the view
         sceneView.scene = scene
+        
+        modelManager.addOmniLight(to: sceneView.scene.rootNode)
+        
     }
     
     // MARK: - Life cicles
