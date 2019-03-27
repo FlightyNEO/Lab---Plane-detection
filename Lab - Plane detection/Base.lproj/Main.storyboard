@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zad-fh-lcH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9v2-yq-b1J">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main Table View Controller-->
+        <!--Choose model-->
         <scene sceneID="KvV-DU-I1B">
             <objects>
                 <tableViewController id="zad-fh-lcH" customClass="MainTableViewController" customModule="Lab___Plane_detection" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,10 +45,11 @@
                             <outlet property="delegate" destination="zad-fh-lcH" id="Slr-xf-XS4"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Choose model" id="ygI-FP-aKg"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cuh-aA-1CG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-836" y="33"/>
+            <point key="canvasLocation" x="161.25" y="32.74647887323944"/>
         </scene>
         <!--Augmented Reality View Controller-->
         <scene sceneID="tXr-a1-R10">
@@ -77,6 +78,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1061.25" y="32.74647887323944"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="H3k-Hg-D3S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9v2-yq-b1J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bjv-sk-JYZ">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zad-fh-lcH" kind="relationship" relationship="rootViewController" id="T5X-Ue-mgr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SOv-lH-DI4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836.25" y="32.74647887323944"/>
         </scene>
     </scenes>
 </document>

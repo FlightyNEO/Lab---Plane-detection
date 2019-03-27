@@ -72,13 +72,11 @@ struct ModelManager {
     private func calculateScaleNode(_ scalebleNode: SCNNode, to plane: SCNPlane, by scale: Float = 1) -> Float {
         
         let minSizePlane = Float(min(plane.width, plane.height))
-        let maxSizeShip = max((scalebleNode.boundingBox.max.x - scalebleNode.boundingBox.min.x), (scalebleNode.boundingBox.max.y - scalebleNode.boundingBox.min.y))
-        let resultScale = (minSizePlane / maxSizeShip) * scale
+        let maxSizeModel = max((scalebleNode.boundingBox.max.x - scalebleNode.boundingBox.min.x), (scalebleNode.boundingBox.max.y - scalebleNode.boundingBox.min.y))
+        let resultScale = (minSizePlane / maxSizeModel) * scale
         
         #if DEBUG
-        print("Plane size", minSizePlane)
-        print("Size ship", maxSizeShip)
-        print("Scale", resultScale)
+        print(#""Plane size" = \#(minSizePlane)\#n"Model size" = \#(maxSizeModel)\#n"Scale" = \#(scale)\#n"#)
         #endif
         
         return resultScale
@@ -186,8 +184,8 @@ extension ModelManager: AddModelProtocol {
         let lightNode = SCNNode()
         let light = SCNLight()
         light.type = .omni
-        light.intensity = 5000
-        light.color = UIColor.yellow
+        light.intensity = 800
+        light.color = UIColor.white
         
         lightNode.light = light
         lightNode.position.y = 1
